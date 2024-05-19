@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" href="https://cdn4.iconfinder.com/data/icons/logos-and-brands/512/235_Nvidia_logo-512.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <script src="https://kit.fontawesome.com/924cd312b8.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>NVIDIA</title>
+</head>
+<body>
+    <header>
+        <nav class="relative px-4 py-4 flex justify-between items-center bg-white dark:bg-black border-2 dark:border-0 h-24">
+            <a href="/index.html">
+                <img class="h-40 dark:absolute dark:-top-40" src="/IMG/NVIDIA-logo.png" alt="NVIDIA-logo">
+            </a>
+    
+            <a href="/index.html">
+                <img class="h-16 invisible dark:visible dark:absolute dark:top-4 dark:left-4" src="/IMG/nvidia-30-series-super-leaked-specifications.avif" alt="NVIDIA-logo" id="darkLogo">
+            </a>
+            <!--Mobile-->
+            <div class="lg:hidden">
+                <button class="navbar-burger flex items-center text-lime-500 p-3">
+                    <svg class="block h-4 w-4 fill-current" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path>
+                    </svg>
+                </button>
+            </div>
+            <ul class="hidden absolute top-1/2 left-1/2 transform -translate-y-1/2 -translate-x-1/2 lg:flex lg:mx-auto lg:flex lg:items-center lg:w-auto lg:space-x-6">
+                <li><a class="text-md text-gray-500 dark:text-gray-400 hover:text-gray-800 dark:hover:text-white transition duration-300 all" href="#">Home</a></li>
+                <li class="text-gray-300 dark:text-gray-300">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" class="w-4 h-4 current-fill" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 5v0m0 7v0m0 7v0m0-13a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2z" />
+                    </svg>
+                </li>
+                <li><a class="text-md text-lime-500 font-bold" href="#">About Us</a></li>
+                <li class="text-gray-300 dark:text-gray-300">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" class="w-4 h-4 current-fill" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 5v0m0 7v0m0 7v0m0-13a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2z" />
+                    </svg>
+                </li>
+                <li><a class="text-md text-gray-500 dark:text-gray-400 hover:text-gray-800 dark:hover:text-white transition duration-300 all" href="#">Services</a></li>
+                <li class="text-gray-300 dark:text-gray-300">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" class="w-4 h-4 current-fill" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 5v0m0 7v0m0 7v0m0-13a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2z" />
+                    </svg>
+                </li>
+                <li><a class="text-md text-gray-500 dark:text-gray-400 hover:text-gray-800 dark:hover:text-white transition duration-300 all" href="#">Pricing</a></li>
+                <li class="text-gray-300 dark:text-gray-300">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" class="w-4 h-4 current-fill" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 5v0m0 7v0m0 7v0m0-13a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2z" />
+                    </svg>
+                </li>
+                <li><a class="text-md text-gray-500 dark:text-gray-400 hover:text-gray-800 dark:hover:text-white transition duration-300 all" href="#">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="navbar-menu relative z-50 hidden">
+            <div class="navbar-backdrop fixed inset-0 bg-gray-800 dark:bg-gray-800 opacity-75"></div>
+            <nav class="fixed top-0 left-0 bottom-0 flex flex-col w-5/6 max-w-sm py-6 px-6 bg-white dark:bg-gray-900 border-r overflow-y-auto">
+                <div class="flex items-center mb-8">
+                    <a class="mr-auto text-3xl font-bold leading-none text-gray-800 dark:text-white" href="#">
+                        <svg class="h-12" alt="logo" viewBox="0 0 10240 10240">
+                            <path xmlns="http://www.w3.org/2000/svg" d="M8284 9162 c-2 -207 -55 -427 -161 -667 -147 -333 -404 -644 -733 -886 -81 -59 -247 -169 -256 -169 -3 0 -18 -9 -34 -20 -26 -19 -344 -180 -354 -180 -3 0 -29 -11 -58 -24 -227 -101 -642 -225 -973 -290 -125 -25 -397 -70 -480 -80 -22 -3 -76 -9 -120 -15 -100 -13 -142 -17 -357 -36 -29 -2 -98 -7 -153 -10 -267 -15 -436 -28 -525 -40 -14 -2 -45 -7 -70 -10 -59 -8 -99 -14 -130 -20 -14 -3 -41 -7 -60 -11 -19 -3 -39 -7 -45 -8 -5 -2 -28 -6 -50 -10 -234 -45 -617 -165 -822 -257 -23 -10 -45 -19 -48 -19 -7 0 -284 -138 -340 -170 -631 -355 -1107 -842 -1402 -1432 -159 -320 -251 -633 -308 -1056 -26 -190 -27 -635 -1 -832 3 -19 7 -59 10 -89 4 -30 11 -84 17 -120 6 -36 12 -77 14 -91 7 -43 33 -174 39 -190 3 -8 7 -28 9 -45 6 -35 52 -221 72 -285 7 -25 23 -79 35 -120 29 -99 118 -283 189 -389 67 -103 203 -244 286 -298 75 -49 178 -103 196 -103 16 0 27 16 77 110 124 231 304 529 485 800 82 124 153 227 157 230 3 3 28 36 54 74 116 167 384 497 546 671 148 160 448 450 560 542 14 12 54 45 90 75 88 73 219 172 313 238 42 29 77 57 77 62 0 5 -13 34 -29 66 -69 137 -149 405 -181 602 -7 41 -14 82 -15 90 -1 8 -6 46 -10 83 -3 37 -8 77 -10 88 -2 11 -7 65 -11 122 -3 56 -8 104 -9 107 -2 3 0 12 5 19 6 10 10 8 15 -10 10 -34 167 -230 283 -355 251 -264 531 -450 814 -551 129 -45 324 -84 470 -91 l73 -3 0 -75 c0 -63 3 -73 22 -85 13 -8 38 -13 63 -11 61 3 72 28 72 157 l0 117 40 0 c123 0 332 32 477 70 286 76 557 221 753 401 145 136 282 310 343 437 63 132 102 292 102 415 l0 72 43 3 c23 2 68 7 98 11 89 12 275 53 370 81 249 72 492 170 755 305 86 45 159 80 163 78 8 -3 59 -167 103 -329 53 -195 65 -258 63 -325 -3 -68 -6 -75 -39 -113 -27 -31 -40 -59 -49 -102 -16 -71 -14 -76 78 -164 32 -31 86 -86 120 -122 34 -36 88 -93 120 -127 114 -121 308 -344 330 -372 9 -11 50 -59 90 -107 41 -47 137 -168 213 -267 77 -99 194 -252 261 -340 67 -88 124 -160 128 -160 4 0 8 -4 8 -9 0 -5 52 -70 115 -145 64 -74 181 -211 261 -303 80 -93 164 -192 188 -221 51 -65 142 -178 190 -230 22 -24 69 -79 105 -123 153 -185 222 -272 368 -454 166 -206 307 -374 325 -374 4 0 17 -15 30 -34 32 -45 263 -304 293 -313 23 -7 24 -11 24 -105 0 -99 -7 -121 -68 -209 -52 -75 -131 -174 -147 -174 -5 0 -22 -13 -39 -29 -51 -50 -151 -144 -180 -169 -24 -21 -27 -22 -42 -7 -8 9 -15 23 -15 31 0 7 -12 27 -26 45 -32 38 -67 106 -79 157 -5 22 -13 40 -17 40 -3 0 -17 35 -30 78 -25 86 -72 209 -131 325 -22 43 -42 87 -46 97 -3 11 -14 33 -23 50 -22 38 -120 204 -166 272 -21 30 -39 59 -39 65 0 6 -9 21 -21 33 -11 12 -38 48 -60 80 -23 33 -50 70 -61 83 -11 13 -56 74 -100 136 -93 128 -120 161 -166 202 -20 18 -37 35 -37 38 0 3 -18 26 -40 52 -22 26 -44 57 -49 69 -5 13 -15 23 -23 23 -7 0 -38 30 -69 66 -30 36 -64 73 -75 82 -11 8 -29 29 -40 45 -10 17 -44 55 -74 86 -30 31 -86 95 -124 142 -39 47 -82 99 -96 117 -14 17 -56 68 -93 112 -72 87 -153 179 -223 263 -24 28 -44 54 -44 59 0 5 -21 32 -46 60 -55 61 -134 150 -188 209 -40 45 -135 151 -153 167 -5 4 -33 37 -63 73 -30 37 -75 89 -101 116 -26 28 -54 63 -62 78 -8 16 -20 28 -26 28 -6 0 -11 5 -11 10 0 6 -11 20 -25 32 -14 13 -25 29 -25 37 0 8 -6 20 -13 26 -7 7 -33 42 -58 79 -25 37 -69 92 -98 123 -29 31 -69 79 -89 106 -20 28 -70 87 -112 133 -43 45 -102 114 -133 153 -32 38 -65 75 -75 81 -9 6 -19 21 -23 32 -3 11 -13 20 -22 20 -9 0 -34 26 -55 58 -21 31 -61 80 -88 107 -27 28 -55 61 -62 73 -7 13 -22 23 -34 23 -12 0 -21 4 -21 9 0 5 -13 29 -30 54 -16 26 -45 69 -63 97 -19 27 -56 87 -83 132 -28 46 -64 97 -80 113 -16 17 -38 45 -49 62 -12 18 -23 29 -26 25 -2 -4 -8 0 -13 9 -5 8 -35 52 -66 97 -31 45 -67 99 -80 120 -13 21 -49 71 -80 111 -32 40 -65 87 -75 105 -9 18 -24 33 -33 33 -9 0 -33 25 -53 55 -21 30 -48 61 -61 69 -12 8 -33 37 -46 63 -13 26 -33 50 -44 54 -10 4 -19 13 -19 20 0 7 -23 39 -51 71 -27 33 -55 73 -62 90 -8 16 -19 29 -25 29 -5 0 -24 23 -40 50 -17 28 -51 73 -76 100 -25 28 -46 55 -46 61 0 6 -13 27 -30 46 -16 18 -30 37 -30 42 0 5 -13 27 -30 48 -16 22 -30 47 -30 57 0 10 -12 30 -26 45 -14 15 -33 41 -43 57 -10 17 -29 39 -42 50 -13 11 -24 27 -24 36 0 9 -7 20 -15 23 -8 3 -15 12 -15 19 0 8 -18 35 -40 61 -22 26 -40 54 -40 63 0 9 -9 19 -19 23 -11 3 -23 16 -26 28 -4 12 -14 21 -24 21 -9 0 -31 20 -49 45 -18 24 -38 45 -43 45 -5 0 -22 19 -37 42 -15 24 -33 43 -41 43 -8 0 -14 7 -14 15 0 8 -13 27 -30 42 -16 15 -30 36 -30 46 0 10 -15 32 -32 50 -18 17 -39 46 -48 64 -8 18 -24 34 -35 36 -11 2 -25 17 -32 32 -7 16 -30 46 -51 67 -20 21 -41 49 -45 62 -4 12 -12 22 -18 22 -5 0 -28 22 -51 50 -22 27 -49 50 -59 50 -9 0 -17 7 -17 15 0 8 -16 30 -35 50 -19 20 -35 41 -35 48 0 7 -9 12 -20 12 -11 0 -20 4 -20 9 0 5 -18 32 -40 60 -22 28 -40 56 -40 63 0 7 -13 26 -30 42 -16 15 -30 34 -30 42 0 7 -16 32 -35 54 -19 22 -35 47 -35 55 0 7 -9 13 -20 13 -11 0 -20 5 -20 10 0 6 -10 28 -21 50 -12 22 -24 45 -27 52 -3 7 -12 25 -20 40 -8 15 -15 33 -15 40 0 7 -4 12 -9 12 -5 0 -14 20 -21 45 -6 25 -23 55 -37 67 -15 12 -27 28 -27 35 0 7 -6 13 -13 13 -6 0 -20 21 -30 48 -9 26 -21 56 -27 65 -5 10 -14 31 -18 48 -4 16 -14 37 -22 46 -12 14 -15 14 -21 2 -6 -10 -9 -8 -9 8 0 16 7 23 25 25 14 1 32 -3 40 -9 8 -7 23 -12 34 -12 19 0 19 2 5 32 -9 18 -25 41 -36 51 -11 9 -20 21 -20 27 0 6 -6 15 -13 19 -8 4 -18 16 -22 27 -4 11 -14 20 -22 20 -7 0 -13 5 -13 11 0 5 -15 21 -32 35 -18 14 -32 33 -32 42 0 8 -6 15 -14 15 -8 0 -18 13 -21 29 -3 15 -12 28 -19 28 -7 0 -13 5 -13 10 0 6 -15 29 -32 52 -18 22 -38 51 -44 63 -6 11 -26 27 -45 35 -19 8 -36 21 -38 30 -3 8 -10 15 -16 15 -6 0 -15 15 -20 33 -5 17 -22 43 -38 57 -17 14 -30 33 -30 43 0 9 -7 17 -15 17 -8 0 -15 6 -15 14 0 7 -9 21 -20 30 -11 9 -20 24 -20 34 0 9 -6 22 -12 29 -9 8 -9 12 -1 12 8 0 10 4 5 9 -5 6 -2 13 6 17 9 3 11 12 6 25 -6 15 -4 18 9 14 9 -3 17 -2 17 3 0 5 21 7 48 4 26 -3 55 -1 63 4 8 4 30 8 48 8 26 0 32 -4 32 -21z"/>
+                        </svg>
+                    </a>
+                    <button class="navbar-close">
+                        <svg class="h-6 w-6 text-gray-400 cursor-pointer hover:text-gray-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                        </svg>
+                    </button>
+                </div>
+                <div>
+                    <ul>
+                        <li class="mb-1"><a class="block p-4 text-sm font-semibold text-gray-400 dark:text-gray-300 hover:bg-lime-500 hover:text-white rounded transition duration-200" href="#">Home</a></li>
+                        <li class="mb-1"><a class="block p-4 text-sm font-semibold text-gray-400 dark:text-gray-300 hover:bg-lime-500 hover:text-white rounded transition duration-200" href="#">About Us</a></li>
+                        <li class="mb-1"><a class="block p-4 text-sm font-semibold text-gray-400 dark:text-gray-300 hover:bg-lime-500 hover:text-white rounded transition duration-200" href="#">Services</a></li>
+                        <li class="mb-1"><a class="block p-4 text-sm font-semibold text-gray-400 dark:text-gray-300 hover:bg-lime-500 hover:text-white rounded transition duration-200" href="#">Pricing</a></li>
+                        <li class="mb-1"><a class="block p-4 text-sm font-semibold text-gray-400 dark:text-gray-300 hover:bg-lime-500 hover:text-white rounded transition duration-200" href="#">Contact</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+    
+
+    <main>
+
+        <section class="text-gray-600 body-font dark:text-gray-400 dark:bg-gray-800">
+            <div class="container mx-auto overflow-hidden">
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <!-- 1 Slide -->
+                        <div class="swiper-slide">
+                            <div class="text-gray-600 dark:text-gray-400 body-font dark:bg-gray-800">
+                                <div class="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
+                                    <div class="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
+                                        <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900 dark:text-white">Generální ředitel společnosti NVIDIA Jensen Huang</h1>
+                                        <p class="mb-8 leading-relaxed">Jensen Huang je vizionářem a podnikatelem, který založil společnost NVIDIA Corporation a vedl ji k revolučnímu pokroku v oblasti grafických technologií a umělé inteligence. Jeho vášeň a odhodlání přinesly světu inovativní produkty, jako jsou grafické karty GeForce a pokročilé AI technologie. Jeho vůdcovství a strategické rozhodnutí učinily z NVIDIA předního hráče v oboru, a jeho vize směřuje k dalším technologickým průlomům a inovacím.</p>
+                                        <div class="flex justify-center">
+                                            <button class="inline-flex text-white font-semibold bg-lime-500 border-0 py-2 px-6 focus:outline-none hover:bg-white hover:text-lime-500 duration-300 all rounded text-lg">Zjistit více</button>
+                                        </div>
+                                    </div>
+                                    <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
+                                        <img class="object-cover object-center rounded" alt="Jensen Huang" src="https://cdn.britannica.com/60/257460-050-62FF74CB/NVIDIA-Jensen-Huang.jpg">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- 2 Slide -->
+                        <div class="swiper-slide">
+                            <div class="text-gray-600 dark:text-gray-400 body-font dark:bg-gray-800">
+                                <div class="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
+                                    <div class="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
+                                        <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900 dark:text-white">Aktualizace aplikace ChatRTX je
+                                            <br class="hidden lg:inline-block">nyní ke stažení
+                                        </h1>
+                                        <p class="mb-8 leading-relaxed">Vytvoř si chatbota s umělou inteligencí propojeného s tvým obsahem pomocí demoverze aplikace ChatRTX. Získej rychlé a bezpečné odpovědi – to vše lokálně na tvém PC s akcelerací grafickou kartou RTX pomocí technologií RAG a TensorRT-LLM. Nyní s podporou hlasového a obrazového vyhledávání a novými modely.</p>
+                                        <div class="flex justify-center">
+                                            <button class="inline-flex text-white font-semibold bg-lime-500 border-0 py-2 px-6 focus:outline-none hover:bg-white hover:text-lime-500 duration-300 all rounded text-lg">Zjistit více</button>
+                                        </div>
+                                    </div>
+                                    <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
+                                        <img class="object-cover object-center rounded" alt="ChatRTX" src="https://static1.howtogeekimages.com/wordpress/wp-content/uploads/2024/02/16.jpg">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- 3 Slide -->
+                        <div class="swiper-slide">
+                            <div class="text-gray-600 body-font dark:text-gray-400 dark:bg-gray-800">
+                                <div class="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
+                                  <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0">
+                                    <img class="object-cover object-center rounded" alt="AI" src="https://www.nvidia.com/content/dam/en-zz/Solutions/ai-on-rtx/nvidia-ai-on-rtx-100vp-d.jpg">
+                                  </div>
+                                  <div class="lg:flex-grow md:w-1/2 lg:pl-24 md:pl-16 flex flex-col md:items-start md:text-left items-center text-center">
+                                    <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900 dark:text-white">Oznamujeme poskytování mikroslužeb generativní umělé inteligence</h1>
+                                    <p class="mb-8 leading-relaxed">Stavební bloky podnikové úrovně pro vytváření a nasazování vlastních aplikací na vaší platformě při zachování plného vlastnictví a kontroly nad duševním vlastnictvím.</p>
+                                    <div class="flex justify-center">
+                                        <button class="inline-flex text-white font-semibold bg-lime-500 border-0 py-2 px-6 focus:outline-none hover:bg-white hover:text-lime-500 duration-300 all rounded text-lg">Zjistit více</button>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                        </div>
+                        
+                    </div>
+                    
+                    <div class="swiper-button-prev dark:text-white text-black"></div>
+                    <div class="swiper-button-next dark:text-white text-black"></div>
+                </div>
+            </div>
+        </section>
+        
+
+        <section class="text-gray-600 body-font dark:text-gray-400 dark:bg-gray-800">
+            <div class="container px-5 py-24 mx-auto">
+                <div class="flex flex-col">
+                    <div class="h-1 bg-gray-200 dark:bg-gray-600 rounded overflow-hidden">
+                        <div class="w-24 h-full bg-lime-500 dark:bg-lime-400"></div>
+                    </div>
+                    <div class="flex flex-wrap sm:flex-row flex-col py-6 mb-12">
+                        <h2 class="sm:w-2/5 text-gray-900 dark:text-white font-medium title-font text-2xl mb-2 sm:mb-0">Umělá inteligence</h2>
+                        <p class="sm:w-3/5 leading-relaxed text-base sm:pl-10 pl-0">Street art subway tile salvia four dollar toast bitters selfies quinoa yuccie synth meditation iPhone intelligentsia prism tofu. Viral gochujang bitters dreamcatcher.</p>
+                    </div>
+                </div>
+                <div class="flex flex-wrap sm:-m-4 -mx-4 -mb-10 -mt-4">
+                    <div class="p-4 md:w-1/3 sm:mb-0 mb-6">
+                        <div class="rounded-lg h-64 overflow-hidden">
+                            <img alt="content" class="object-cover object-center h-full w-full" src="https://dummyimage.com/1203x503">
+                        </div>
+                        <h2 class="text-xl font-medium title-font text-gray-900 dark:text-white mt-5">Shooting Stars</h2>
+                        <p class="text-base leading-relaxed mt-2">Swag shoivdigoitch literally meditation subway tile tumblr cold-pressed. Gastropub street art beard dreamcatcher neutra, ethical XOXO lumbersexual.</p>
+                        <a class="text-lime-500 dark:text-lime-400 inline-flex items-center mt-3">Learn More
+                            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+                                <path d="M5 12h14M12 5l7 7-7 7"></path>
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="p-4 md:w-1/3 sm:mb-0 mb-6">
+                        <div class="rounded-lg h-64 overflow-hidden">
+                            <img alt="content" class="object-cover object-center h-full w-full" src="https://dummyimage.com/1204x504">
+                        </div>
+                        <h2 class="text-xl font-medium title-font text-gray-900 dark:text-white mt-5">The Catalyzer</h2>
+                        <p class="text-base leading-relaxed mt-2">Swag shoivdigoitch literally meditation subway tile tumblr cold-pressed. Gastropub street art beard dreamcatcher neutra, ethical XOXO lumbersexual.</p>
+                        <a class="text-lime-500 dark:text-lime-400 inline-flex items-center mt-3">Learn More
+                            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+                                <path d="M5 12h14M12 5l7 7-7 7"></path>
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="p-4 md:w-1/3 sm:mb-0 mb-6">
+                        <div class="rounded-lg h-64 overflow-hidden">
+                            <img alt="content" class="object-cover object-center h-full w-full" src="https://dummyimage.com/1205x505">
+                        </div>
+                        <h2 class="text-xl font-medium title-font text-gray-900 dark:text-white mt-5">The 400 Blows</h2>
+                        <p class="text-base leading-relaxed mt-2">Swag shoivdigoitch literally meditation subway tile tumblr cold-pressed. Gastropub street art beard dreamcatcher neutra, ethical XOXO lumbersexual.</p>
+                        <a class="text-lime-500 dark:text-lime-400 inline-flex items-center mt-3">Learn More
+                            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+                                <path d="M5 12h14M12 5l7 7-7 7"></path>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+    </main>
+    
+    <footer class="text-gray-600 dark:text-gray-400 body-font dark:bg-gray-900">
+        <div class="container px-5 py-24 mx-auto flex md:items-center lg:items-start md:flex-row md:flex-nowrap flex-wrap flex-col">
+            <div class="w-full md:w-2/3 flex-shrink-0 md:mx-0 mx-auto text-center md:text-left">
+                <h2 class="title-font font-medium text-gray-900 dark:text-white tracking-widest text-sm mb-3">About Tailblocks</h2>
+                <p class="mt-2 text-sm text-gray-500 dark:text-gray-300">Air plant banjo lyft occupy retro adaptogen indego</p>
+            </div>
+            <div class="flex-grow flex flex-wrap md:pl-20 -mb-10 md:mt-0 mt-10 md:text-left text-center w-full md:w-1/3">
+                <!-- Category Links -->
+                <div class="lg:w-1/2 w-full px-4">
+                    <h2 class="title-font font-medium text-gray-900 dark:text-white tracking-widest text-sm mb-3">CATEGORIES</h2>
+                    <nav class="list-none mb-10">
+                        <li>
+                            <a class="text-gray-600 dark:text-gray-300 hover:text-gray-800 dark:hover:text-white">First Link</a>
+                        </li>
+                        <li>
+                            <a class="text-gray-600 dark:text-gray-300 hover:text-gray-800 dark:hover:text-white">Second Link</a>
+                        </li>
+                        <li>
+                            <a class="text-gray-600 dark:text-gray-300 hover:text-gray-800 dark:hover:text-white">Third Link</a>
+                        </li>
+                        <li>
+                            <a class="text-gray-600 dark:text-gray-300 hover:text-gray-800 dark:hover:text-white">Fourth Link</a>
+                        </li>
+                    </nav>
+                </div>
+                <!-- Social Links -->
+                <div class="lg:w-1/2 w-full px-4">
+                    <h2 class="title-font font-medium text-gray-900 dark:text-white tracking-widest text-sm mb-3">FOLLOW US</h2>
+                    <nav class="list-none mb-10">
+                        <li>
+                            <a class="text-gray-600 dark:text-gray-300 hover:text-gray-800 dark:hover:text-white">Facebook</a>
+                        </li>
+                        <li>
+                            <a class="text-gray-600 dark:text-gray-300 hover:text-gray-800 dark:hover:text-white">Twitter</a>
+                        </li>
+                        <li>
+                            <a class="text-gray-600 dark:text-gray-300 hover:text-gray-800 dark:hover:text-white">Instagram</a>
+                        </li>
+                        <li>
+                            <a class="text-gray-600 dark:text-gray-300 hover:text-gray-800 dark:hover:text-white">LinkedIn</a>
+                        </li>
+                    </nav>
+                </div>
+            </div>
+        </div>
+        <div class="bg-gray-100 dark:bg-black">
+            <div class="container mx-auto py-4 px-5 flex flex-wrap flex-col sm:flex-row">
+                <p class="text-gray-500 dark:text-gray-300 text-sm text-center sm:text-left">© 2024 Tailblocks —
+                    <a href="https://twitter.com/knyttneve" rel="noopener noreferrer" class="text-gray-600 dark:text-gray-300 ml-1" target="_blank">@knyttneve</a>
+                </p>
+                <span class="inline-flex sm:ml-auto sm:mt-0 mt-2 justify-center sm:justify-start">
+                    <a class="text-gray-500 dark:text-gray-300">
+                        <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                            <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+                        </svg>
+                    </a>
+                    <a class="ml-3 text-gray-500 dark:text-gray-300">
+                        <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                            <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
+                        </svg>
+                    </a>
+                    <a class="ml-3 text-gray-500 dark:text-gray-300">
+                        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                            <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+                            <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
+                        </svg>
+                    </a>
+                    <a class="ml-3 text-gray-500 dark:text-gray-300">
+                        <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="0" class="w-5 h-5" viewBox="0 0 24 24">
+                            <path stroke="none" d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"></path>
+                            <circle cx="4" cy="4" r="2" stroke="none"></circle>
+                        </svg>
+                    </a>
+                </span>
+            </div>
+        </div>
+    </footer>
+    
+	
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
+
