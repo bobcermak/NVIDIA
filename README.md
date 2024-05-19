@@ -1,2 +1,2 @@
 # NVIDIA
-# Autor: Bohudlsv Čermák
+# Autor: Bohuslav Čermák
