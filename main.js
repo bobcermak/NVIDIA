@@ -31,17 +31,16 @@ document.addEventListener('DOMContentLoaded', function () {
 //SLider
 
 var swiper = new Swiper('.swiper-container', {
-
-    loop: true, 
-    slidesPerView: 1, 
-    spaceBetween: 30, 
+    loop: true,
+    slidesPerView: 1,
+    spaceBetween: 30,
     autoplay: {
-        delay: 5000, 
-        disableOnInteraction: false, 
+        delay: 5000,
+        disableOnInteraction: false,
     },
-    
     navigation: {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
     },
 });
+
