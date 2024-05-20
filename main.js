@@ -35,12 +35,27 @@ var swiper = new Swiper('.swiper-container', {
     slidesPerView: 1,
     spaceBetween: 30,
     autoplay: {
-        delay: 5000,
+        delay: 3000,
         disableOnInteraction: false,
     },
     navigation: {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
     },
+    allowTouchMove: false, // Disable swipe
+});
+
+// Contact us
+
+const form = document.getElementById('contactForm');
+form.addEventListener('submit', function(event) {
+  const name = document.getElementById('name').value;
+  const email = document.getElementById('email').value;
+  const message = document.getElementById('message').value;
+
+  if (!name || !email || !message) {
+    event.preventDefault(); // Prevent form submission
+    alert('Prosím vyplňte všechna povinná pole.'); // Display alert message
+  }
 });
 
