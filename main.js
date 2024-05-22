@@ -46,6 +46,7 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 });
 
+
 //SLider
 
 var swiper = new Swiper('.swiper-container', {

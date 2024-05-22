@@ -359,9 +359,9 @@
     transition: top 0.3s;
 }
 
-.header-hidden {
-    top: -100px; /* Skryje hlavičku */
-}
+  .header-hidden {
+      top: -100px; /* Skryje hlavičku */
+  }
 
 
   /*Main*/
