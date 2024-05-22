@@ -1,3 +1,21 @@
+/*Header*/
+
+document.addEventListener('DOMContentLoaded', function() {
+    let lastScrollY = window.scrollY;
+    const header = document.querySelector('header');
+
+    window.addEventListener('scroll', function() {
+        if (window.scrollY < lastScrollY) {
+            // Rolování nahoru
+            header.classList.remove('header-hidden');
+        } else {
+            // Rolování dolů
+            header.classList.add('header-hidden');
+        }
+        lastScrollY = window.scrollY;
+    });
+});
+
 
 //Hamburger menu//
 
