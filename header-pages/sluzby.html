@@ -30,7 +30,7 @@
                     <i class="fa-solid fa-bars"></i>
                 </button>
             </div>
-            <ul class="hidden absolute top-1/2 left-1/2 transform -translate-y-1/2 -translate-x-1/2 lg:flex lg:mx-auto lg:flex lg:items-center lg:w-auto lg:space-x-6">
+            <menu class="hidden absolute top-1/2 left-1/2 transform -translate-y-1/2 -translate-x-1/2 lg:flex lg:mx-auto lg:flex lg:items-center lg:w-auto lg:space-x-6">
                 <li><a class="text-md text-gray-500 dark:text-gray-400 hover:text-gray-800 dark:hover:text-white transition duration-300 all" href="../index.html">Domů</a></li>
                 <li class="text-gray-300 dark:text-gray-300">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" class="w-4 h-4 current-fill" viewBox="0 0 24 24">
@@ -49,14 +49,14 @@
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 5v0m0 7v0m0 7v0m0-13a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2z" />
                     </svg>
                 </li>
-                <li><a class="text-md text-gray-500 dark:text-gray-400 hover:text-gray-800 dark:hover:text-white transition duration-300 all" href="cenik.html">Produkty</a></li>
+                <li><a class="text-md text-gray-500 dark:text-gray-400 hover:text-gray-800 dark:hover:text-white transition duration-300 all" href="produkty.html">Produkty</a></li>
                 <li class="text-gray-300 dark:text-gray-300">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" class="w-4 h-4 current-fill" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 5v0m0 7v0m0 7v0m0-13a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2z" />
                     </svg>
                 </li>
                 <li><a class="text-md text-gray-500 dark:text-gray-400 hover:text-gray-800 dark:hover:text-white transition duration-300 all" href="../index.html#kontakt">Kontakt</a></li>
-            </ul>
+            </menu>
         </nav>
         <div class="navbar-menu relative z-50 hidden">
             <div class="navbar-backdrop fixed inset-0 bg-gray-800 dark:bg-gray-800 opacity-75 z-30"></div>
@@ -72,13 +72,13 @@
                     </button>
                 </div>
                 <div>
-                    <ul>
+                    <menu>
                         <li class="mb-1"><a class="block p-4 text-sm font-semibold text-gray-400 dark:text-gray-300 hover:bg-lime-500 hover:text-white rounded transition duration-200" href="../index.html">Domů</a></li>
                         <li class="mb-1"><a class="block p-4 text-sm font-semibold text-gray-400 dark:text-gray-300 hover:bg-lime-500 hover:text-white rounded transition duration-200" href="o-nas.html">O nás</a></li>
                         <li class="mb-1"><a class="block p-4 text-sm font-semibold text-gray-400 dark:text-gray-300 hover:bg-lime-500 hover:text-white rounded transition duration-200" href="sluzby.html">Služby</a></li>
-                        <li class="mb-1"><a class="block p-4 text-sm font-semibold text-gray-400 dark:text-gray-300 hover:bg-lime-500 hover:text-white rounded transition duration-200" href="cenik.html">Produkty</a></li>
+                        <li class="mb-1"><a class="block p-4 text-sm font-semibold text-gray-400 dark:text-gray-300 hover:bg-lime-500 hover:text-white rounded transition duration-200" href="produkty.html">Produkty</a></li>
                         <li class="mb-1"><a class="block p-4 text-sm font-semibold text-gray-400 dark:text-gray-300 hover:bg-lime-500 hover:text-white rounded transition duration-200" href="../index.html#kontakt">Kontakt</a></li>
-                    </ul>
+                    </menu>
                 </div>
             </nav>
         </div>
@@ -151,48 +151,51 @@
                     </div>
                 </div>
                   <h1 class="sm:text-4xl text-3xl font-medium title-font mb-2 text-gray-900 dark:text-white">Vyber si členství.</h1>
-                  <p class="lg:w-2/3 mx-auto leading-relaxed text-base text-gray-500 dark:text-gray-300">
-                    Vyberte si plán, který nejlépe vyhovuje vašim potřebám.</p>
+                  <p class="lg:w-2/3 mx-auto leading-relaxed text-base text-gray-500 dark:text-gray-300">Vyberte si plán, který nejlépe vyhovuje vašim potřebám.</p>
               </div>
               <div class="flex justify-center flex-wrap -m-4">
                   <div class="p-4 md:w-1/3 w-full">
                       <div class="h-full p-8 rounded-lg border-2 border-gray-300 dark:border-gray-700 flex flex-col relative overflow-hidden shadow-lg dark:bg-gray-800">
-                          <h2 class="text-sm tracking-widest title-font mb-1 font-medium text-gray-400">START</h2>
-                          <h1 class="text-4xl text-gray-900 dark:text-white pb-4 mb-4 border-b border-gray-200 dark:border-gray-700 leading-none">Free</h1>
+                          <h2 class="text-sm tracking-widest title-font mb-1 font-medium text-gray-400">Free</h2>
+                          <h1 class="text-4xl text-gray-900 dark:text-white leading-none flex items-center pb-4 mb-4 border-b border-gray-200 dark:border-gray-700">
+                            <span>0 Kč</span>
+                            <span class="text-lg ml-1 font-normal text-gray-500 dark:text-gray-400">/mo</span>
+                          </h1>
                           <p class="flex items-center text-gray-600 dark:text-gray-400 mb-2">
                               <span class="w-6 h-6 mr-2 inline-flex items-center justify-center bg-lime-500 text-white rounded-full flex-shrink-0">
                                   <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" class="w-4 h-4" viewBox="0 0 24 24">
                                       <path d="M20 6L9 17l-5-5"></path>
                                   </svg>
-                              </span>Feature 1
+                              </span>Základní sestava
                           </p>
                           <p class="flex items-center text-gray-600 dark:text-gray-400 mb-2">
                             <span class="w-6 h-6 mr-2 inline-flex items-center justify-center bg-lime-500 text-white rounded-full flex-shrink-0">
                               <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" class="w-4 h-4" viewBox="0 0 24 24">
                                 <path d="M20 6L9 17l-5-5"></path>
                               </svg>
-                            </span>Feature 2
+                            </span>1 hodina délka relace*
                           </p>
                           <p class="flex items-center text-gray-600 dark:text-gray-400 mb-6">
                             <span class="w-6 h-6 mr-2 inline-flex items-center justify-center bg-lime-500 text-white rounded-full flex-shrink-0">
                               <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" class="w-4 h-4" viewBox="0 0 24 24">
                                 <path d="M20 6L9 17l-5-5"></path>
                               </svg>
-                            </span>Feature 3
+                            </span>Standardní přístup na herní servery
                           </p>
-                          <button class="flex items-center mt-auto text-white bg-lime-500 border-0 py-2 px-4 w-full focus:outline-none hover:text-black dark:hover:bg-white dark:hover:text-lime-500 duration-300 all rounded">Get Started
-                            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-auto" viewBox="0 0 24 24">
-                              <path d="M5 12h14M12 5l7 7-7 7"></path>
-                            </svg>
-                          </button>
+                          <a target="_blank" href="https://login.nvgs.nvidia.com/v1/login/identifier?preferred_nvidia=true&context=Initial&theme=Noir&locale=cs-CZ&prompt=select_account&key=eyJhbGciOiJIUzI1NiJ9.eyJzZSI6ImZZcnAiLCJ0b2tlbklkIjoiMTI0NDM3ODA3OTU0MDkyODUxMiIsIm90IjoiMTI0NDM3ODA3OTU1NzcwNTcyOCIsImV4cCI6MTcxNjgzOTY1MywiaWF0IjoxNzE2NzUzMjUzLCJqdGkiOiJiZjYxODQ1NC05YjcxLTQzNWYtYjE2YS0xNGMwNDVhYjgzMDYifQ._00kZw_ZJqzOzwOooRtXl0owOEBuDXgt5_dIzUyYwR0&client_id=310670192232366513" class="flex items-center mt-auto text-white bg-lime-500 border-0 py-2 px-4 w-full focus:outline-none hover:text-black dark:hover:bg-white dark:hover:text-lime-500 duration-300 all rounded">
+                            <span class="flex justify-between items-center w-full">
+                                Připojit
+                                <i class="fas fa-arrow-right ml-2"></i>
+                            </span>
+                        </a>
                       </div>
                   </div>
                   <div class="p-4 md:w-1/3 w-full">
                       <div class="h-full p-8 rounded-lg border-2 border-lime-500 flex flex-col relative overflow-hidden shadow-lg dark:bg-gray-800">
                           <span class="bg-lime-500 text-white px-3 py-1 tracking-widest text-xs absolute right-0 top-0 rounded-bl">POPULAR</span>
-                          <h2 class="text-sm tracking-widest title-font mb-1 font-medium text-gray-400">PRO</h2>
+                          <h2 class="text-sm tracking-widest title-font mb-1 font-medium text-gray-400">Priority</h2>
                           <h1 class="text-4xl text-gray-900 dark:text-white leading-none flex items-center pb-4 mb-4 border-b border-gray-200 dark:border-gray-700">
-                              <span>$38</span>
+                              <span>299 Kč</span>
                               <span class="text-lg ml-1 font-normal text-gray-500 dark:text-gray-400">/mo</span>
                           </h1>
                           <p class="flex items-center text-gray-600 dark:text-gray-400 mb-2">
@@ -200,41 +203,42 @@
                               <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" class="w-4 h-4" viewBox="0 0 24 24">
                                 <path d="M20 6L9 17l-5-5"></path>
                               </svg>
-                            </span>Feature 1
+                            </span>Prémiové herní PC | RTX ON
                           </p>
                           <p class="flex items-center text-gray-600 dark:text-gray-400 mb-2">
                             <span class="w-6 h-6 mr-2 inline-flex items-center justify-center bg-lime-500 text-white rounded-full flex-shrink-0">
                               <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" class="w-4 h-4" viewBox="0 0 24 24">
                                 <path d="M20 6L9 17l-5-5"></path>
                               </svg>
-                            </span>Feature 2
+                            </span>Délka relace 6 hodin*
                           </p>
                           <p class="flex items-center text-gray-600 dark:text-gray-400 mb-2">
                             <span class="w-6 h-6 mr-2 inline-flex items-center justify-center bg-lime-500 text-white rounded-full flex-shrink-0">
                               <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" class="w-4 h-4" viewBox="0 0 24 24">
                                 <path d="M20 6L9 17l-5-5"></path>
                               </svg>
-                            </span>Feature 3
+                            </span>Přednostní přístup na prémiové servery
                           </p>
                           <p class="flex items-center text-gray-600 dark:text-gray-400 mb-6">
                             <span class="w-6 h-6 mr-2 inline-flex items-center justify-center bg-lime-500 text-white rounded-full flex-shrink-0">
                               <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" class="w-4 h-4" viewBox="0 0 24 24">
                                 <path d="M20 6L9 17l-5-5"></path>
                               </svg>
-                            </span>Feature 4
+                            </span>Až 60 FPS*
                           </p>
-                          <button class="flex items-center mt-auto text-white bg-lime-500 border-0 py-2 px-4 w-full focus:outline-none hover:text-black dark:hover:bg-white dark:hover:text-lime-500 duration-300 all rounded">Get Started
-                            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-auto" viewBox="0 0 24 24">
-                              <path d="M5 12h14M12 5l7 7-7 7"></path>
-                            </svg>
-                          </button>
+                          <a target="_blank" href="https://login.nvgs.nvidia.com/v1/login/identifier?preferred_nvidia=true&context=Initial&theme=Noir&locale=cs-CZ&prompt=select_account&key=eyJhbGciOiJIUzI1NiJ9.eyJzZSI6ImZZcnAiLCJ0b2tlbklkIjoiMTI0NDM3ODA3OTU0MDkyODUxMiIsIm90IjoiMTI0NDM3ODA3OTU1NzcwNTcyOCIsImV4cCI6MTcxNjgzOTY1MywiaWF0IjoxNzE2NzUzMjUzLCJqdGkiOiJiZjYxODQ1NC05YjcxLTQzNWYtYjE2YS0xNGMwNDVhYjgzMDYifQ._00kZw_ZJqzOzwOooRtXl0owOEBuDXgt5_dIzUyYwR0&client_id=310670192232366513" class="flex items-center mt-auto text-white bg-lime-500 border-0 py-2 px-4 w-full focus:outline-none hover:text-black dark:hover:bg-white dark:hover:text-lime-500 duration-300 all rounded">
+                            <span class="flex justify-between items-center w-full">
+                                Připojit
+                                <i class="fas fa-arrow-right ml-2"></i>
+                            </span>
+                        </a>
                       </div>
                   </div>
                   <div class="p-4 md:w-1/3 w-full">
                       <div class="h-full p-8 rounded-lg border-2 border-gray-300 dark:border-gray-700 flex flex-col relative overflow-hidden shadow-lg dark:bg-gray-800">
-                          <h2 class="text-sm tracking-widest title-font mb-1 font-medium text-gray-400">BUSINESS</h2>
+                          <h2 class="text-sm tracking-widest title-font mb-1 font-medium text-gray-400">Ultimate</h2>
                           <h1 class="text-4xl text-gray-900 dark:text-white leading-none flex items-center pb-4 mb-4 border-b border-gray-200 dark:border-gray-700">
-                              <span>$56</span>
+                              <span>599 Kč</span>
                               <span class="text-lg ml-1 font-normal text-gray-500 dark:text-gray-400">/mo</span>
                           </h1>
                           <p class="flex items-center text-gray-600 dark:text-gray-400 mb-2">
@@ -242,34 +246,35 @@
                               <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" class="w-4 h-4" viewBox="0 0 24 24">
                                 <path d="M20 6L9 17l-5-5"></path>
                               </svg>
-                            </span>Feature 1
+                            </span>Herní PC s kartou GeForce RTX 4080 | RTX ON
                           </p>
                           <p class="flex items-center text-gray-600 dark:text-gray-400 mb-2">
                             <span class="w-6 h-6 mr-2 inline-flex items-center justify-center bg-lime-500 text-white rounded-full flex-shrink-0">
                               <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" class="w-4 h-4" viewBox="0 0 24 24">
                                 <path d="M20 6L9 17l-5-5"></path>
                               </svg>
-                            </span>Feature 2
+                            </span>Délka relace 8 hodin*
                           </p>
                           <p class="flex items-center text-gray-600 dark:text-gray-400 mb-2">
                             <span class="w-6 h-6 mr-2 inline-flex items-center justify-center bg-lime-500 text-white rounded-full flex-shrink-0">
                               <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" class="w-4 h-4" viewBox="0 0 24 24">
                                 <path d="M20 6L9 17l-5-5"></path>
                               </svg>
-                            </span>Feature 3
+                            </span>Exkluzivní přístup k serverům s kartami RTX 4080
                           </p>
                           <p class="flex items-center text-gray-600 dark:text-gray-400 mb-6">
                             <span class="w-6 h-6 mr-2 inline-flex items-center justify-center bg-lime-500 text-white rounded-full flex-shrink-0">
                               <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" class="w-4 h-4" viewBox="0 0 24 24">
                                 <path d="M20 6L9 17l-5-5"></path>
                               </svg>
-                            </span>Feature 4
+                            </span>Rozlišení až 4K*
                           </p>
-                          <button class="flex items-center mt-auto text-white bg-lime-500 border-0 py-2 px-4 w-full focus:outline-none hover:text-black dark:hover:bg-white dark:hover:text-lime-500 duration-300 all rounded">Get Started
-                            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-auto" viewBox="0 0 24 24">
-                              <path d="M5 12h14M12 5l7 7-7 7"></path>
-                            </svg>
-                          </button>
+                          <a target="_blank" href="https://login.nvgs.nvidia.com/v1/login/identifier?preferred_nvidia=true&context=Initial&theme=Noir&locale=cs-CZ&prompt=select_account&key=eyJhbGciOiJIUzI1NiJ9.eyJzZSI6ImZZcnAiLCJ0b2tlbklkIjoiMTI0NDM3ODA3OTU0MDkyODUxMiIsIm90IjoiMTI0NDM3ODA3OTU1NzcwNTcyOCIsImV4cCI6MTcxNjgzOTY1MywiaWF0IjoxNzE2NzUzMjUzLCJqdGkiOiJiZjYxODQ1NC05YjcxLTQzNWYtYjE2YS0xNGMwNDVhYjgzMDYifQ._00kZw_ZJqzOzwOooRtXl0owOEBuDXgt5_dIzUyYwR0&client_id=310670192232366513" class="flex items-center mt-auto text-white bg-lime-500 border-0 py-2 px-4 w-full focus:outline-none hover:text-black dark:hover:bg-white dark:hover:text-lime-500 duration-300 all rounded">
+                            <span class="flex justify-between items-center w-full">
+                                Připojit
+                                <i class="fas fa-arrow-right ml-2"></i>
+                            </span>
+                        </a>
                       </div>
                   </div>
               </div>
