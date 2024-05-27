@@ -16,19 +16,24 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
-var currentLocation = window.location.href;
+document.addEventListener('DOMContentLoaded', () => {
+    const currentPath = window.location.pathname;
 
-    // Get all the anchor tags in the menu
-    var menuLinks = document.querySelectorAll('.navbar-menu a');
-
-    // Loop through each anchor tag
-    menuLinks.forEach(function(link) {
-        // Check if the href attribute of the link matches the current page URL
-        if (link.href === currentLocation) {
-            // Add a class to the link to highlight it
+    // Procházení všech odkazů v záhlaví
+    document.querySelectorAll('.header-link').forEach(link => {
+        if (link.getAttribute('href') === currentPath) {
             link.classList.add('active');
         }
+    });
+
+    // Procházení všech odkazů v mobilním menu
+    document.querySelectorAll('.navbar-menu .menu-link').forEach(link => {
+        if (link.getAttribute('href') === currentPath) {
+            link.classList.add('active');
+        }
+    });
 });
+
 
 
 //Hamburger menu//
