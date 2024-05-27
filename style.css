@@ -363,6 +363,12 @@
       top: -100px; /* Skryje hlavičku */
   }
 
+  .active {
+    color: lime;
+    font-weight: bold;
+    /* Add any other styles you want for the active link */
+}
+
 
   /*Main*/
 

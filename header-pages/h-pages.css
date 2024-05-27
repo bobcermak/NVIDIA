@@ -363,6 +363,11 @@
       top: -100px; /* Skryje hlavičku */
   }
 
+  .active {
+    color: lime;
+    font-weight: bold;
+  }
+
 
   /*Main*/
 

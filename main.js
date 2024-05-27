@@ -16,6 +16,20 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
+var currentLocation = window.location.href;
+
+    // Get all the anchor tags in the menu
+    var menuLinks = document.querySelectorAll('.navbar-menu a');
+
+    // Loop through each anchor tag
+    menuLinks.forEach(function(link) {
+        // Check if the href attribute of the link matches the current page URL
+        if (link.href === currentLocation) {
+            // Add a class to the link to highlight it
+            link.classList.add('active');
+        }
+});
+
 
 //Hamburger menu//
 
