@@ -363,19 +363,6 @@
       top: -100px; /* Skryje hlavičku */
   }
 
-  /* Styl pro odkazy při aktivní stránce */
-  .header-link.active {
-    color: #84cc16; /* lime-500 */
-  }
-
-  /* Styl pro mobilní menu při aktivní stránce */
-  .navbar-menu .menu-link.active {
-    background-color: #84cc16; /* lime-500 */
-    color: white;
-  }
-
-
-
   /*Main*/
 
   .but {

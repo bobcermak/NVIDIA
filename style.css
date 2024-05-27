@@ -363,12 +363,6 @@
       top: -100px; /* Skryje hlavičku */
   }
 
-  .active {
-    color: lime;
-    font-weight: bold;
-    /* Add any other styles you want for the active link */
-}
-
 
   /*Main*/
 
@@ -387,6 +381,8 @@
   .swiper-button-next:after {
       font-size: 20px;
   }
+
+  /*Responsive*/
 
   @media (min-width: 640px) {
       .swiper-button-prev,

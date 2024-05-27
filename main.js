@@ -16,24 +16,17 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
-document.addEventListener('DOMContentLoaded', () => {
-    const currentPath = window.location.pathname;
+// Získává všechny odkazy v hlavičce
+const headerLinks = document.querySelectorAll('header a');
 
-    // Procházení všech odkazů v záhlaví
-    document.querySelectorAll('.header-link').forEach(link => {
-        if (link.getAttribute('href') === currentPath) {
-            link.classList.add('active');
-        }
-    });
-
-    // Procházení všech odkazů v mobilním menu
-    document.querySelectorAll('.navbar-menu .menu-link').forEach(link => {
-        if (link.getAttribute('href') === currentPath) {
-            link.classList.add('active');
-        }
-    });
+// Prochází všechny odkazy v hlavičce
+headerLinks.forEach(link => {
+    // Zkontroluje, zda aktuální odkaz v hlavičce má třídu "active"
+    if (link.classList.contains('active')) {
+        // Pokud ano, nastaví mu inline styl pro barvu
+        link.style.color = '#84cc16'; // Lime-500 barva
+    }
 });
-
 
 
 //Hamburger menu//
