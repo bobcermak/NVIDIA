@@ -382,6 +382,30 @@
       font-size: 20px;
   }
 
+  .light .list-disc li::before {
+    content: '';
+    width: 8px;
+    height: 8px;
+    background-color: #1a202c;
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 8px;
+}
+
+
+  .zdroje ul li a {
+    transition: 0.2s all;
+  }
+
+  .zdroje ul li a:hover {
+    color: #111e91;
+  }
+
+  .zdroje ul li a:visited {
+    color: #3c0e42;
+  }
+
+
   /*Responsive*/
 
   @media (min-width: 640px) {
