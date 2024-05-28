@@ -16,18 +16,12 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
-// Získává všechny odkazy v hlavičce
 const headerLinks = document.querySelectorAll('header a');
-
-// Prochází všechny odkazy v hlavičce
 headerLinks.forEach(link => {
-    // Zkontroluje, zda aktuální odkaz v hlavičce má třídu "active"
     if (link.classList.contains('active')) {
-        // Pokud ano, nastaví mu inline styl pro barvu
         link.style.color = '#84cc16'; // Lime-500 barva
     }
 });
-
 
 //Hamburger menu//
 
@@ -58,6 +52,7 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 });
 
+/*Main*/
 
 
 //SLider
@@ -74,7 +69,7 @@ var swiper = new Swiper('.swiper-container', {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
     },
-    allowTouchMove: false, // Disable swipe
+    allowTouchMove: false,
 });
 
 // Contact us
